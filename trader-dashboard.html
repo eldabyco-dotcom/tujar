@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trader Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Trader Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#search-products">Search Products</a></li>
+                <li><a href="#price-requests">Request Price Quotes</a></li>
+                <li><a href="#my-price-requests">My Price Requests</a></li>
+                <li><a href="#orders-history">Orders History</a></li>
+                <li><a href="#my-orders">My Orders</a></li>
+                <li><a href="#track-shipments">Track Shipments</a></li>
+                <li><a href="#invoices-payments">Invoices and Payments</a></li>
+                <li><a href="#profile-settings">Profile Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="search-products">
+            <h2>Search Products</h2>
+            <input type="text" placeholder="Search for products...">
+            <button>Search</button>
+        </section>
+        <section id="price-requests">
+            <h2>Request Price Quotes</h2>
+            <form>
+                <label for="product">Product:</label>
+                <input type="text" id="product" name="product" required>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+                <button type="submit">Request Price</button>
+            </form>
+        </section>
+        <section id="my-price-requests">
+            <h2>My Price Requests</h2>
+            <ul>
+                <li>No price requests yet.</li>
+            </ul>
+        </section>
+        <section id="orders-history">
+            <h2>Orders History</h2>
+            <ul>
+                <li>No orders history yet.</li>
+            </ul>
+        </section>
+        <section id="my-orders">
+            <h2>My Orders</h2>
+            <ul>
+                <li>No current orders.</li>
+            </ul>
+        </section>
+        <section id="track-shipments">
+            <h2>Track Shipments</h2>
+            <input type="text" placeholder="Enter tracking number...">
+            <button>Track</button>
+        </section>
+        <section id="invoices-payments">
+            <h2>Invoices and Payments</h2>
+            <ul>
+                <li>No invoices or payments recorded.</li>
+            </ul>
+        </section>
+        <section id="profile-settings">
+            <h2>Profile Settings</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Update Profile</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Eldaby Co. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
